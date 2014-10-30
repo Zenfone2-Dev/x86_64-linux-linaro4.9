@@ -133,7 +133,7 @@
 .\" ========================================================================
 .\"
 .IX Title "GCC 1"
-.TH GCC 1 "2014-10-28" "gcc-4.9.2" "GNU"
+.TH GCC 1 "2014-10-13" "gcc-4.9.2" "GNU"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -4788,10 +4788,6 @@ more details.  The run-time behavior can be influenced using the
 \&\fB\s-1ASAN_OPTIONS\s0\fR environment variable; see
 <\fBhttps://code.google.com/p/address\-sanitizer/wiki/Flags#Run\-time_flags\fR> for
 a list of supported options.
-.IP "\fB\-fsanitize=kernel\-address\fR" 4
-.IX Item "-fsanitize=kernel-address"
-Enable AddressSanitizer for Linux kernel.
-See <\fBhttp://code.google.com/p/address\-sanitizer/wiki/AddressSanitizerForKernel\fR> for more details.
 .IP "\fB\-fsanitize=thread\fR" 4
 .IX Item "-fsanitize=thread"
 Enable ThreadSanitizer, a fast data race detector.
@@ -9392,12 +9388,6 @@ Enable detection of use-after-return.  This kind of protection
 is enabled by default when using \fB\-fsanitize=address\fR option.
 To disable use-after-return detection use 
 \&\fB\-\-param asan\-use\-after\-return=0\fR.
-.IP "\fBasan-instrumentation-with-call-threshold\fR" 4
-.IX Item "asan-instrumentation-with-call-threshold"
-If number of memory accesses in function being instrumented
-is greater or equal to this number, use callbacks instead of inline checks.
-E.g. to disable inline code use
-\&\fB\-\-param asan\-instrumentation\-with\-call\-threshold=0\fR.
 .RE
 .RS 4
 .RE

@@ -4,10 +4,10 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "4.9.2 20141028 (prerelease)")
+(!version  "4.9.2 20141013 (prerelease)")
 (!srcdir  "../.././../gcc/gcc-linaro/gcc")
 (!languages 9 ada c cp fortran go java lto objc objcp)
-(!fileslist 198
+(!fileslist 197
  (!srcfile 511  "../libcpp/include/line-map.h")
  (!srcfile 511  "../libcpp/include/cpplib.h")
  (!srcfile 511  "../libcpp/include/cpp-id-data.h")
@@ -130,7 +130,6 @@
  (!srcfile 511  "ubsan.c")
  (!srcfile 511  "tsan.c")
  (!srcfile 511  "ipa-devirt.c")
- (!srcfile 511  "internal-fn.h")
  (!srcfile 1  "ada/gcc-interface/ada-tree.h")
  (!srcfile 1  "ada/gcc-interface/gigi.h")
  (!srcfile 1  "ada/gcc-interface/decl.c")
@@ -5095,47 +5094,47 @@
                             (!type struct 255 
                              (!type already_seen 254)
                              gc_pointed_to "constant_descriptor_rtx"
-                             (!srcfileloc  "varasm.c" 3488)
+                             (!srcfileloc  "varasm.c" 3493)
                              (!fields 10 
                               (!pair  "next"
                                (!type already_seen 254)
-                               (!srcfileloc  "varasm.c" 3478)
+                               (!srcfileloc  "varasm.c" 3483)
                                nil )
                               (!pair  "mem"
                                (!type already_seen 136)
-                               (!srcfileloc  "varasm.c" 3479)
+                               (!srcfileloc  "varasm.c" 3484)
                                nil )
                               (!pair  "sym"
                                (!type already_seen 136)
-                               (!srcfileloc  "varasm.c" 3480)
+                               (!srcfileloc  "varasm.c" 3485)
                                nil )
                               (!pair  "constant"
                                (!type already_seen 136)
-                               (!srcfileloc  "varasm.c" 3481)
+                               (!srcfileloc  "varasm.c" 3486)
                                nil )
                               (!pair  "offset"
                                (!type already_seen 9)
-                               (!srcfileloc  "varasm.c" 3482)
+                               (!srcfileloc  "varasm.c" 3487)
                                nil )
                               (!pair  "hash"
                                (!type already_seen 9)
-                               (!srcfileloc  "varasm.c" 3483)
+                               (!srcfileloc  "varasm.c" 3488)
                                nil )
                               (!pair  "mode"
                                (!type already_seen 9)
-                               (!srcfileloc  "varasm.c" 3484)
+                               (!srcfileloc  "varasm.c" 3489)
                                nil )
                               (!pair  "align"
                                (!type already_seen 9)
-                               (!srcfileloc  "varasm.c" 3485)
+                               (!srcfileloc  "varasm.c" 3490)
                                nil )
                               (!pair  "labelno"
                                (!type already_seen 9)
-                               (!srcfileloc  "varasm.c" 3486)
+                               (!srcfileloc  "varasm.c" 3491)
                                nil )
                               (!pair  "mark"
                                (!type already_seen 9)
-                               (!srcfileloc  "varasm.c" 3487)
+                               (!srcfileloc  "varasm.c" 3492)
                                nil )
                              )
                              (!options 
@@ -15334,7 +15333,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 763 nil  gc_unused "anonymous:../.././../gcc/gcc-linaro/gcc/c/c-parser.c:6068"nil 
+ (!type struct 763 nil  gc_unused "anonymous:../.././../gcc/gcc-linaro/gcc/c/c-parser.c:6071"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -17926,19 +17925,19 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1021 nil  gc_unused "anonymous:../.././../gcc/gcc-linaro/gcc/config/i386/i386.c:34519"nil 
+ (!type struct 1021 nil  gc_unused "anonymous:../.././../gcc/gcc-linaro/gcc/config/i386/i386.c:34522"nil 
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1022 nil  gc_unused "anonymous:../.././../gcc/gcc-linaro/gcc/config/i386/i386.c:34308"nil 
+ (!type struct 1022 nil  gc_unused "anonymous:../.././../gcc/gcc-linaro/gcc/config/i386/i386.c:34311"nil 
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1023 nil  gc_unused "anonymous:../.././../gcc/gcc-linaro/gcc/config/i386/i386.c:33473"nil 
+ (!type struct 1023 nil  gc_unused "anonymous:../.././../gcc/gcc-linaro/gcc/config/i386/i386.c:33476"nil 
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1024 nil  gc_unused "anonymous:../.././../gcc/gcc-linaro/gcc/config/i386/i386.c:32785"nil 
+ (!type struct 1024 nil  gc_unused "anonymous:../.././../gcc/gcc-linaro/gcc/config/i386/i386.c:32788"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -19039,11 +19038,11 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1147 nil  gc_unused "anonymous:../.././../gcc/gcc-linaro/gcc/varasm.c:4818"nil 
+ (!type struct 1147 nil  gc_unused "anonymous:../.././../gcc/gcc-linaro/gcc/varasm.c:4823"nil 
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1148 nil  gc_unused "anonymous:../.././../gcc/gcc-linaro/gcc/varasm.c:4574"nil 
+ (!type struct 1148 nil  gc_unused "anonymous:../.././../gcc/gcc-linaro/gcc/varasm.c:4579"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -20887,15 +20886,15 @@
         (!type struct 1383 
          (!type already_seen 1382)
          gc_pointed_to "rtx_constant_pool"
-         (!srcfileloc  "varasm.c" 3475)
+         (!srcfileloc  "varasm.c" 3480)
          (!fields 4 
           (!pair  "first"
            (!type already_seen 254)
-           (!srcfileloc  "varasm.c" 3463)
+           (!srcfileloc  "varasm.c" 3468)
            nil )
           (!pair  "last"
            (!type already_seen 254)
-           (!srcfileloc  "varasm.c" 3464)
+           (!srcfileloc  "varasm.c" 3469)
            nil )
           (!pair  "const_rtx_htab"
            (!type pointer 1384 nil  gc_used
@@ -20907,7 +20906,7 @@
              (!type already_seen 254)
              nil nil nil nil nil nil nil nil nil nil )
            )
-           (!srcfileloc  "varasm.c" 3470)
+           (!srcfileloc  "varasm.c" 3475)
            (!options 
             (!option param_is type 
              (!type already_seen 255)
@@ -20916,7 +20915,7 @@
           )
           (!pair  "offset"
            (!type already_seen 9)
-           (!srcfileloc  "varasm.c" 3474)
+           (!srcfileloc  "varasm.c" 3479)
            nil )
          )
          nil 511 nil nil )
@@ -23328,7 +23327,7 @@
   nil )
  (!pair  "vinfo_t"
   (!type already_seen 831)
-  (!srcfileloc  "ada/gcc-interface/decl.c" 6911)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 6908)
   nil )
  (!pair  "intrin_binding_t"
   (!type already_seen 832)
@@ -23564,27 +23563,27 @@
   nil )
  (!pair  "imm_info"
   (!type already_seen 1017)
-  (!srcfileloc  "config/i386/i386.c" 45544)
+  (!srcfileloc  "config/i386/i386.c" 45547)
   nil )
  (!pair  "dispatch_windows"
   (!type already_seen 1018)
-  (!srcfileloc  "config/i386/i386.c" 45536)
+  (!srcfileloc  "config/i386/i386.c" 45539)
   nil )
  (!pair  "sched_insn_info"
   (!type already_seen 1019)
-  (!srcfileloc  "config/i386/i386.c" 45514)
+  (!srcfileloc  "config/i386/i386.c" 45517)
   nil )
  (!pair  "function_version_info"
   (!type already_seen 1025)
-  (!srcfileloc  "config/i386/i386.c" 31554)
+  (!srcfileloc  "config/i386/i386.c" 31557)
   nil )
  (!pair  "const_ix86_first_cycle_multipass_data_t"
   (!type already_seen 1029)
-  (!srcfileloc  "config/i386/i386.c" 26315)
+  (!srcfileloc  "config/i386/i386.c" 26318)
   nil )
  (!pair  "ix86_first_cycle_multipass_data_t"
   (!type already_seen 1029)
-  (!srcfileloc  "config/i386/i386.c" 26313)
+  (!srcfileloc  "config/i386/i386.c" 26316)
   nil )
  (!pair  "omp_context"
   (!type already_seen 1048)
@@ -23676,15 +23675,15 @@
   nil )
  (!pair  "tm_alias_pair"
   (!type already_seen 1146)
-  (!srcfileloc  "varasm.c" 5756)
+  (!srcfileloc  "varasm.c" 5761)
   nil )
  (!pair  "oc_local_state"
   (!type already_seen 1147)
-  (!srcfileloc  "varasm.c" 4839)
+  (!srcfileloc  "varasm.c" 4844)
   nil )
  (!pair  "oc_outer_state"
   (!type already_seen 1148)
-  (!srcfileloc  "varasm.c" 4577)
+  (!srcfileloc  "varasm.c" 4582)
   nil )
  (!pair  "block_info"
   (!type already_seen 1164)
@@ -25072,7 +25071,7 @@
  
  (!type already_seen 546)
 )
-(!variables 622
+(!variables 621
  (!pair  "objc_eh_personality_decl"
   (!type already_seen 5)
   (!srcfileloc  "objc/objc-next-runtime-abi-02.c" 3608)
@@ -26051,11 +26050,11 @@
   nil )
  (!pair  "generic_parm_count"
   (!type already_seen 9)
-  (!srcfileloc  "cp/parser.c" 31987)
+  (!srcfileloc  "cp/parser.c" 31989)
   nil )
  (!pair  "the_parser"
   (!type already_seen 694)
-  (!srcfileloc  "cp/parser.c" 31410)
+  (!srcfileloc  "cp/parser.c" 31412)
   nil )
  (!pair  "lambda_scope_stack"
   (!type already_seen 689)
@@ -26659,12 +26658,6 @@
   )
   (!srcfileloc  "ada/gcc-interface/gigi.h" 449)
   nil )
- (!pair  "internal_fn_fnspec_array"
-  (!type array 1598 nil  gc_used "IFN_LAST + 1" 
-   (!type already_seen 5)
-  )
-  (!srcfileloc  "internal-fn.h" 57)
-  nil )
  (!pair  "odr_types_ptr"
   (!type already_seen 849)
   (!srcfileloc  "ipa-devirt.c" 276)
@@ -26681,14 +26674,14 @@
  )
  (!pair  "asan_ctor_statements"
   (!type already_seen 5)
-  (!srcfileloc  "asan.c" 2366)
+  (!srcfileloc  "asan.c" 2400)
   nil )
  (!pair  "asan_detect_stack_use_after_return"
   (!type already_seen 5)
   (!srcfileloc  "asan.c" 243)
   nil )
  (!pair  "shadow_ptr_types"
-  (!type array 1599 nil  gc_used "2" 
+  (!type array 1598 nil  gc_used "2" 
    (!type already_seen 5)
   )
   (!srcfileloc  "asan.c" 240)
@@ -26724,7 +26717,7 @@
   (!srcfileloc  "tree-ssa-alias.h" 146)
   nil )
  (!pair  "free_phinodes"
-  (!type array 1600 nil  gc_used "NUM_BUCKETS - 2" 
+  (!type array 1599 nil  gc_used "NUM_BUCKETS - 2" 
    (!type already_seen 382)
   )
   (!srcfileloc  "tree-phinodes.c" 79)
@@ -26761,25 +26754,25 @@
  )
  (!pair  "vselect_insn"
   (!type already_seen 136)
-  (!srcfileloc  "config/i386/i386.c" 42328)
+  (!srcfileloc  "config/i386/i386.c" 42331)
   nil )
  (!pair  "ix86_builtins"
-  (!type array 1601 nil  gc_used "(int) IX86_BUILTIN_MAX" 
+  (!type array 1600 nil  gc_used "(int) IX86_BUILTIN_MAX" 
    (!type already_seen 5)
   )
-  (!srcfileloc  "config/i386/i386.c" 28754)
+  (!srcfileloc  "config/i386/i386.c" 28757)
   nil )
  (!pair  "ix86_builtin_func_type_tab"
-  (!type array 1602 nil  gc_used "(int) IX86_BT_LAST_ALIAS + 1" 
+  (!type array 1601 nil  gc_used "(int) IX86_BT_LAST_ALIAS + 1" 
    (!type already_seen 5)
   )
-  (!srcfileloc  "config/i386/i386.c" 27062)
+  (!srcfileloc  "config/i386/i386.c" 27065)
   nil )
  (!pair  "ix86_builtin_type_tab"
-  (!type array 1603 nil  gc_used "(int) IX86_BT_LAST_CPTR + 1" 
+  (!type array 1602 nil  gc_used "(int) IX86_BT_LAST_CPTR + 1" 
    (!type already_seen 5)
   )
-  (!srcfileloc  "config/i386/i386.c" 27012)
+  (!srcfileloc  "config/i386/i386.c" 27015)
   nil )
  (!pair  "dllimport_map"
   (!type already_seen 1513)
@@ -26929,15 +26922,15 @@
   nil )
  (!pair  "elf_fini_array_section"
   (!type already_seen 245)
-  (!srcfileloc  "varasm.c" 7538)
+  (!srcfileloc  "varasm.c" 7543)
   nil )
  (!pair  "elf_init_array_section"
   (!type already_seen 245)
-  (!srcfileloc  "varasm.c" 7537)
+  (!srcfileloc  "varasm.c" 7542)
   nil )
  (!pair  "tm_clone_hash"
   (!type already_seen 1513)
-  (!srcfileloc  "varasm.c" 5714)
+  (!srcfileloc  "varasm.c" 5719)
   (!options 
    (!option param_is type 
     (!type already_seen 1419)
@@ -26947,11 +26940,11 @@
  )
  (!pair  "weakref_targets"
   (!type already_seen 5)
-  (!srcfileloc  "varasm.c" 5408)
+  (!srcfileloc  "varasm.c" 5413)
   nil )
  (!pair  "const_desc_htab"
   (!type already_seen 1515)
-  (!srcfileloc  "varasm.c" 2787)
+  (!srcfileloc  "varasm.c" 2792)
   (!options 
    (!option param_is type 
     (!type already_seen 1343)
@@ -26960,15 +26953,15 @@
  )
  (!pair  "initial_trampoline"
   (!type already_seen 136)
-  (!srcfileloc  "varasm.c" 2498)
+  (!srcfileloc  "varasm.c" 2503)
   nil )
  (!pair  "weak_decls"
   (!type already_seen 5)
-  (!srcfileloc  "varasm.c" 2276)
+  (!srcfileloc  "varasm.c" 2281)
   nil )
  (!pair  "pending_assemble_externals"
   (!type already_seen 5)
-  (!srcfileloc  "varasm.c" 2206)
+  (!srcfileloc  "varasm.c" 2211)
   nil )
  (!pair  "shared_constant_pool"
   (!type already_seen 1382)
@@ -27014,10 +27007,10 @@
   nil )
  (!pair  "gcc_eh_personality_decl"
   (!type already_seen 5)
-  (!srcfileloc  "tree.c" 11754)
+  (!srcfileloc  "tree.c" 11751)
   nil )
  (!pair  "nonstandard_integer_type_cache"
-  (!type array 1604 nil  gc_used "2 * MAX_INT_CACHED_PREC + 2" 
+  (!type array 1603 nil  gc_used "2 * MAX_INT_CACHED_PREC + 2" 
    (!type already_seen 5)
   )
   (!srcfileloc  "tree.c" 7657)
@@ -27243,15 +27236,15 @@
   nil )
  (!pair  "block_move_fn"
   (!type already_seen 5)
-  (!srcfileloc  "expr.c" 1443)
+  (!srcfileloc  "expr.c" 1427)
   nil )
  (!pair  "stack_check_libfunc"
   (!type already_seen 136)
   (!srcfileloc  "explow.c" 1525)
   nil )
  (!pair  "hard_reg_clobbers"
-  (!type array 1605 nil  gc_used "NUM_MACHINE_MODES" 
-   (!type array 1606 nil  gc_used "FIRST_PSEUDO_REGISTER" 
+  (!type array 1604 nil  gc_used "NUM_MACHINE_MODES" 
+   (!type array 1605 nil  gc_used "FIRST_PSEUDO_REGISTER" 
     (!type already_seen 136)
    )
   )
@@ -27969,19 +27962,19 @@
   (!srcfileloc  "tree-core.h" 1833)
   nil )
  (!pair  "sizetype_tab"
-  (!type array 1607 nil  gc_used "(int) stk_type_kind_last" 
+  (!type array 1606 nil  gc_used "(int) stk_type_kind_last" 
    (!type already_seen 5)
   )
   (!srcfileloc  "tree-core.h" 1821)
   nil )
  (!pair  "integer_types"
-  (!type array 1608 nil  gc_used "itk_none" 
+  (!type array 1607 nil  gc_used "itk_none" 
    (!type already_seen 5)
   )
   (!srcfileloc  "tree-core.h" 1818)
   nil )
  (!pair  "global_trees"
-  (!type array 1609 nil  gc_used "TI_MAX" 
+  (!type array 1608 nil  gc_used "TI_MAX" 
    (!type already_seen 5)
   )
   (!srcfileloc  "tree-core.h" 1814)
@@ -28019,8 +28012,8 @@
   (!srcfileloc  "rtl.h" 2205)
   nil )
  (!pair  "const_tiny_rtx"
-  (!type array 1610 nil  gc_used "4" 
-   (!type array 1611 nil  gc_used "(int) MAX_MACHINE_MODE" 
+  (!type array 1609 nil  gc_used "4" 
+   (!type array 1610 nil  gc_used "(int) MAX_MACHINE_MODE" 
     (!type already_seen 136)
    )
   )
@@ -28031,7 +28024,7 @@
   (!srcfileloc  "rtl.h" 2190)
   nil )
  (!pair  "const_int_rtx"
-  (!type array 1612 nil  gc_used "MAX_SAVED_CONST_INT * 2 + 1" 
+  (!type array 1611 nil  gc_used "MAX_SAVED_CONST_INT * 2 + 1" 
    (!type already_seen 136)
   )
   (!srcfileloc  "rtl.h" 2184)
@@ -28049,7 +28042,7 @@
   (!srcfileloc  "coverage.c" 106)
   nil )
  (!pair  "fn_v_ctrs"
-  (!type array 1613 nil  gc_used "GCOV_COUNTERS" 
+  (!type array 1612 nil  gc_used "GCOV_COUNTERS" 
    (!type already_seen 5)
   )
   (!srcfileloc  "coverage.c" 101)
